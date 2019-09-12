@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { SchoolListComponent } from './school-list/school-list.component';
-import { SchoolCardComponent } from './school-card/school-card.component';
 import { SchoolService } from './Core/school.service';
-import { CreateSchoolComponent } from './create-school/create-school.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './User/login/login.component'
 import { StudentModule } from './Student/student.module';
@@ -14,14 +11,12 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SchoolModule } from './School/school.module';
+import { TeacherModule } from './teacher/teacher.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SchoolListComponent,
-    SchoolCardComponent,
-    CreateSchoolComponent,
     LoginComponent,
   ],
   imports: [
@@ -32,7 +27,8 @@ import { SchoolModule } from './School/school.module';
     BrowserAnimationsModule,
     AngularMaterialModule,
     StudentModule,
-    SchoolModule
+    SchoolModule,
+    TeacherModule
   ],
   providers: [SchoolService],
   bootstrap: [AppComponent]
