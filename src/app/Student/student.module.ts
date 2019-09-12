@@ -6,7 +6,7 @@ import { ExamComponent } from './exam/exam.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { NoticesComponent } from './notices/notices.component';
 import { StudentRoutingModule } from './student-routing.module';
-import { AngularMaterialModule } from '../angular-material/angular-material.module';
+import { AngularMaterialModule } from './angular-material.module';
 
 
 

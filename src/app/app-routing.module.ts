@@ -9,7 +9,8 @@ const routes: Routes = [
   { path : "" , component : HomeComponent},
   { path : "user/login" , component : LoginComponent},
   { path : "school-list" , component : SchoolListComponent},
-  { path : "student" , loadChildren : () => import(`./Student/student.module`).then(m => m.StudentModule) }
+  { path : "student" , loadChildren : () => import(`./Student/student.module`).then(m => m.StudentModule) },
+  { path : "school" , loadChildren : () => import(`./School/school.module`).then(m => m.SchoolModule) }
 ];
 
 @NgModule({

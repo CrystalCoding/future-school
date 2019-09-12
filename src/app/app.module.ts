@@ -10,9 +10,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './User/login/login.component'
 import { StudentModule } from './Student/student.module';
 import { CommonModule } from '@angular/common';
-import { AngularMaterialModule } from './Student/angular-material.module';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SchoolModule } from './School/school.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    StudentModule
+    StudentModule,
+    SchoolModule
   ],
   providers: [SchoolService],
   bootstrap: [AppComponent]
