@@ -1,0 +1,26 @@
+<h2>Create School</h2>
+<form [formGroup]="addSchoolForm" (ngSubmit)="addSchool(addSchool.value)">
+    <div class="form-group">
+        <label>ID</label>
+        <input class="form-control" type="text" (ngModel)="newSchool.id" formControlName="id" placeholder="Enter school ID">
+
+        <label>Name</label>
+        <input class="form-control"type="text" (ngModel)="newSchool.name" formControlName="name" placeholder="Enter school name">
+
+        <label>Address</label>
+        <input class="form-control"type="text" (ngModel)="newSchool.address" formControlName="address" placeholder="Enter school Address">
+
+        <label>Contact</label>
+        <input class="form-control" type="text" (ngModel)="newSchool.contact" formControlName="contact" placeholder="Enter school Contact">
+
+        <label>Rating</label>
+        <input class="form-control"type="text" (ngModel)="newSchool.rating" formControlName="rating" placeholder="Enter school Rating">
+
+        <label>Review</label>
+        <input class="form-control"type="text" (ngModel)="newSchool.review" formControlName="review" placeholder="Enter school review">
+    </div>
+
+    <br>
+    <button type="submit">submit</button>
+
+</form>
