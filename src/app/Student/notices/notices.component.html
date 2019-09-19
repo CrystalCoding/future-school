@@ -1,1 +1,18 @@
-<p>notices works!</p>
+
+    <mat-card *ngFor="let notice of notices" class="example-card flex-me">
+        <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{notice.title}}</mat-card-title>
+        <mat-card-subtitle>{{notice.subTitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+        <p>
+            {{notice.description}}
+        </p>
+        </mat-card-content>
+        <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
