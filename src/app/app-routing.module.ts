@@ -5,11 +5,12 @@ import { LoginComponent } from './User/login/login.component';
 
 
 const routes: Routes = [
-  { path : "" , component : HomeComponent},
-  { path : "user/login" , component : LoginComponent},
-  { path : "student" , loadChildren : () => import(`./Student/student.module`).then(m => m.StudentModule) },
-  { path : "school" , loadChildren : () => import(`./School/school.module`).then(m => m.SchoolModule) },
-  { path : "teacher" , loadChildren : () => import(`./teacher/teacher.module`).then(m => m.TeacherModule) }
+  { path : '' , redirectTo: 'home', pathMatch: 'full'},
+  { path : 'home' , component : HomeComponent},
+  { path : 'user/login' , component : LoginComponent},
+  { path : 'student' , loadChildren : () => import(`./Student/student.module`).then(m => m.StudentModule) },
+  { path : 'school' , loadChildren : () => import(`./School/school.module`).then(m => m.SchoolModule) },
+  { path : 'teacher' , loadChildren : () => import(`./teacher/teacher.module`).then(m => m.TeacherModule) }
 ];
 
 @NgModule({

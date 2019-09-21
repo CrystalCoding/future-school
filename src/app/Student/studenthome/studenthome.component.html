@@ -2,15 +2,20 @@
     
     <mat-toolbar color="primary" class="example-toolbar">
       <button mat-icon-button ><mat-icon (click)="sidenav.toggle()">menu</mat-icon></button>
+      <button mat-icon-button ><mat-icon (click)="navigateToHome()">home</mat-icon></button>
       <h1 class="home-title">Student Dadshboard</h1>
+      <button class="account_circle" mat-icon-button ><mat-icon>account_circle</mat-icon></button>
     </mat-toolbar>
   
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="56" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
       <mat-sidenav #sidenav [fixedInViewport]="true" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
         
         <mat-nav-list>
-          <a mat-list-item *ngFor="let nav of navList" (click)="onNavSelect(nav)" ActivatedRoute=true>{{nav}}</a>
-          <a mat-list-item (click)="sidenav.toggle()" mat-list-item>Close</a>
+          <a mat-list-item routerLink='Schedule' (click)="sidenav.toggle()" ActivatedRoute=true><mat-icon>schedule</mat-icon>Schedule</a>
+          <a mat-list-item routerLink='Exams' (click)="sidenav.toggle()" ActivatedRoute=true><mat-icon>assessment</mat-icon>Exams</a>
+          <a mat-list-item routerLink='Assignments' (click)="sidenav.toggle()" ActivatedRoute=true><mat-icon>assignment</mat-icon>Assignments</a>
+          <a mat-list-item routerLink='Notice' (click)="sidenav.toggle()" ActivatedRoute=true><mat-icon>announcement</mat-icon>Notice</a>
+          <a mat-list-item (click)="sidenav.toggle()" mat-list-item><mat-icon>close</mat-icon>Close</a>
         </mat-nav-list>
 
       </mat-sidenav>

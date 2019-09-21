@@ -12,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SchoolModule } from './School/school.module';
 import { TeacherModule } from './teacher/teacher.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TeacherModule } from './teacher/teacher.module';
     AngularMaterialModule,
     StudentModule,
     SchoolModule,
-    TeacherModule
+    TeacherModule,
+    FlexLayoutModule
   ],
   providers: [SchoolService],
   bootstrap: [AppComponent]

@@ -1,12 +1,44 @@
-.row{
-    padding : 1%;
+.hero-banner-container {
+  background-image: url("../../assets/images/hero-search.jpg");
+  height: 850px;
+  width: 100%;
+}
+.hero-top-bar-container {
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+.hero-top-bar{
+  width: 100%;
+}
+.hero-menu-container {
+
+  height: 120px;
+  width: 100%;
+}
+.hero-menu-logo>img {
+  height: 80px;
+  border-radius: 8%;
+}
+#hero-top-bar-register, #hero-top-bar-login {
+  font-weight: bold;
 }
 
+.hero-title-container {
+  height: 500px;
+  width: 100%;
+}
+.hero-description {
+  font-family: "Bradley Hand ITC" ;
 
-
-.card>img {
-    margin-left: auto;
-    margin-right: auto;
-    height: 35%;
-    width: 35%;
+  color: white;
+  height: 200px;
+  width: 300px;
+  margin-left: 100px;
+}
+.hero-description>h1 {
+  font-size: 60px;
+}
+.hero-description>p {
+  font-size: 30px;
 }

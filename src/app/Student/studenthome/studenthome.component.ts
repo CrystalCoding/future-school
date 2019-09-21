@@ -11,6 +11,7 @@ export class StudentHomeComponent {
 
   mobileQuery: MediaQueryList;
   navList : string[] = ['Schedule', 'Exams', 'Assignments','Notice'];
+  iconList : string[] = ['schedule', 'assessment', 'assignment','announcement'];
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private _router :Router, private _route : ActivatedRoute) { 
@@ -21,6 +22,10 @@ export class StudentHomeComponent {
 
   onNavSelect( navItem : string) :void {
     this._router.navigate([navItem],{relativeTo: this._route});
+  }
+
+  navigateToHome() : void {
+    this._router.navigate(['']);
   }
 
   ngOnDestroy(): void {

@@ -7,12 +7,13 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { NoticesComponent } from './notices/notices.component';
 
 const routes: Routes = [
-  { path : "" , component : StudentHomeComponent , 
-    children : [
-    { path : "Schedule" , component : ScheduleComponent},
-    { path : "Exams" , component : ExamComponent},
-    { path : "Assignments" , component : AssignmentsComponent},
-    { path : "Notice" , component : NoticesComponent} 
+  { path : '' , redirectTo: 'home', pathMatch: 'full'},
+  { path : 'home' , component : StudentHomeComponent,
+      children : [
+    { path : 'Schedule' , component : ScheduleComponent},
+    { path : 'Exams' , component : ExamComponent},
+    { path : 'Assignments' , component : AssignmentsComponent},
+    { path : 'Notice' , component : NoticesComponent}
     ]
   }
 ];

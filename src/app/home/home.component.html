@@ -1,56 +1,40 @@
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-                <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item"><em>KTree</em></li>
-                        <li class="list-group-item">Home</li>
-                        <li class="list-group-item">Features</li>
-                        <li class="list-group-item">Pricing</li>
-                        <li class="list-group-item">Contact</li>
-                      </ul>
-        </div>
-        <div class="col-md-2 offset-md-2">
-            <button [routerLink]="['/user/login']" type="button" class="btn btn-primary">Login</button>
-        </div>
+<div class="hero-banner-container">
+  <div fxLayout="row" fxLayoutAlign="center center" class="hero-top-bar-container">
+    <div fxFlex="80" fxLayout="row" fxLayoutAlign="center center" class="hero-top-bar">
+      <div fxFlex="50" fxLayout="row" fxLayoutGap="3px" class="hero-top-bar-contact">
+        <mat-icon>email</mat-icon>
+        <em>shool.guru@guru.com</em>
+        <mat-icon>phone</mat-icon>
+        <em>+999999999999</em>
+      </div>
+      <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center" class="hero-top-bar-links">
+        <button  mat-button id="hero-top-bar-register">Register</button>
+        <button  mat-button id="hero-top-bar-login">Login</button>
+        <mat-icon>search</mat-icon>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" class="hero-menu-container">
+    <div fxFlexFill fxLayout="row" fxLayoutAlign="center center" class="hero-menu">
+      <div fxFlex="25" fxFlexAlign="start stretch" class="hero-menu-logo">
+        <img src="../../assets/images/home-logo.jpg" alt="">
+      </div>
+      <div fxFlex="50" fxLayoutAlign="space-around" fxFlexAlign="end center" class="hero-menu-links">
+        <button mat-raised-button color="warn">HOME</button>
+        <button mat-raised-button color="warn">ABOUT</button>
+        <button mat-raised-button color="warn">SERVICES</button>
+        <button mat-raised-button color="warn">TEACHERS</button>
+        <button mat-raised-button color="warn">EVENTS</button>
+        <button mat-raised-button color="warn">PAGE</button>
+        <button mat-raised-button color="warn">CONTACT</button>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" class="hero-title-container" >
+    <div fxFlex="40" fxFlexAlign="center" class="hero-description">
+      <h1 >Give your child digital Education !!</h1>
+      <p>Secure future of your child in this digitally revolutionized world with digital tracking, recommendation systems and much more </p>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12">
-            <img src="../../assets/images/home-classroom.jpg" alt="" height="500px" width="900px">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="../../assets/images/svg/ayotree-home-anywhere.svg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Teach & Learn Anywhere.</h5>
-                          <p class="card-text">Access Ayotree on a computer, tablet, or smartphone from any location. With Virtual Classrooms, teachers can conduct lessons online for students anywhere in the world.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-        </div>
-        <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="../../assets/images/svg/ayotree-home-investment.svg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Small Investment. Big Results.</h5>
-                          <p class="card-text">Ayotree has simple monthly pricing with no surprise costs. Our customers rate the value of our service higher than any other school management system available. What’s more exciting is that your first month is free!</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-        </div>
-        <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="../../assets/images/svg/ayotree-home-service.svg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">24/7 Customer Service.</h5>
-                          <p class="card-text">We're always available to answer your questions and hear your ideas on how Ayotree can work better for you. If you already use another system, we can help you migrate to Ayotree as quickly and as smoothly as possible.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-        </div>
-    </div>
+  </div>
 </div>
