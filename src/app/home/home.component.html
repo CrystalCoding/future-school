@@ -8,8 +8,13 @@
         <em>+999999999999</em>
       </div>
       <div fxFlex="50" fxLayout="row" fxLayoutAlign="center center" class="hero-top-bar-links">
-        <button  mat-button id="hero-top-bar-register">Register</button>
-        <button  mat-button id="hero-top-bar-login">Login</button>
+        <button mat-button id="hero-top-bar-register">Register</button>
+        <button mat-button  id="hero-top-bar-login" [matMenuTriggerFor]="menu">Login</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/user/login">Students</button>
+          <button mat-menu-item>Employee</button>
+          <button mat-menu-item>Admin</button>
+        </mat-menu>
         <mat-icon>search</mat-icon>
       </div>
     </div>
@@ -30,10 +35,11 @@
       </div>
     </div>
   </div>
-  <div fxLayout="row" class="hero-title-container" >
+  <div fxLayout="row" class="hero-title-container">
     <div fxFlex="40" fxFlexAlign="center" class="hero-description">
-      <h1 >Give your child digital Education !!</h1>
-      <p>Secure future of your child in this digitally revolutionized world with digital tracking, recommendation systems and much more </p>
+      <h1>Give your child digital Education !!</h1>
+      <p>Secure future of your child in this digitally revolutionized world with digital tracking, recommendation
+        systems and much more </p>
     </div>
 
   </div>
