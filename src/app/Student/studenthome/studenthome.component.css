@@ -16,8 +16,9 @@ mat-icon {
   margin: 5px;
 }
 
-.account_circle {
-  align-self: right;
+.account_circle,.notification-bell {
+  margin : 0 8px;
+  justify-content: flex-end;
 }
 
 .example-container {
