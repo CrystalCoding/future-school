@@ -1,7 +1,14 @@
+.notices-title-container {
+  width: 80%;
+  margin: 20px auto;
+}
+.notices-title {
+  margin: 10px auto;
+}
 .example-card {
     max-width: 400px;
   }
-  
+
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
@@ -11,7 +18,7 @@
     display: inline-flex;
     flex-flow: row wrap;
   }
-  
+
   mat-card {
     /* height: 150px;
     width: 200px; */

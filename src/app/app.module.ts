@@ -3,7 +3,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SchoolService } from './Core/school.service';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './User/login/login.component'
 import { StudentModule } from './Student/student.module';
 import { CommonModule } from '@angular/common';
@@ -30,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     StudentModule,
     SchoolModule,
     TeacherModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [SchoolService],
   bootstrap: [AppComponent]

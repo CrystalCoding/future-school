@@ -1,25 +1,36 @@
-<div class="wrapper fadeInDown">
-        <div id="formContent">
-          <!-- Tabs Titles -->
-      
-          <!-- Icon -->
-          <div class="fadeIn first">
-            <img src="../../assets/images/icon-login-96.png" id="icon" alt="User Icon" />
-          </div>
-      
-          <!-- Login Form -->
-          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-                <div class="form-group">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" class= "form-control" formControlName="userName" (ngModel)="User.userName">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" class="form-control" formControlName="password" (ngModel)="User.password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
-                </div>
-          </form>
-      
-          <!-- Remind Passowrd -->
-          <div id="formFooter">
-            <a class="underlineHover" href="#">Forgot Password?</a>
-          </div>
-      
-        </div>
-      </div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Login</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div fxLayout="column" fxLayoutAlign="center center" class="login-card-container">
+  <mat-card class="mat-h4 mat-subheading-1 login-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content >
+      <form class="login-form">
+        <table class="login-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="login-full-width">
+                <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="login-full-width">
+                <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+              </mat-form-field>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button (click)="login()" color="primary" >Login</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

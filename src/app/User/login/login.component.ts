@@ -9,21 +9,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  user : User;
-  loginForm : FormGroup;
-
-  constructor( private _fb : FormBuilder, private _router :Router) { }
-
+  constructor(private router: Router) { }
+  username: string;
+  password: string;
   ngOnInit() {
-    this.loginForm = this._fb.group({
-      userName : [''],
-      password : ['']
-    });
   }
-
-  onSubmit() {
-    console.log('inside onSubmit');
-    this._router.navigate(['/student']);
+  login(): void {
+    // tslint:disable-next-line:triple-equals
+    if(this.username == 'admin' && this.password == 'admin'){
+      this.router.navigate(['/student']);
+    } else {
+      alert('Invalid credentials');
+    }
   }
-
 }

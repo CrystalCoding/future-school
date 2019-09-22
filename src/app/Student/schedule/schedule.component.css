@@ -1,13 +1,20 @@
+.schedule-title-container {
+  width: 80%;
+  margin: 20px auto;
+}
+.schedule-title {
+  margin: 10px auto;
+}
 .table {
     width: 80%;
     margin: 20px auto;
   }
-  
+
 .mat-form-field {
     font-size: 14px;
     width: 20%;
   }
-  
+
    td, th {
     width : 40%;
   }
