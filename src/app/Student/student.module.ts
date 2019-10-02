@@ -7,6 +7,7 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { NoticesComponent } from './notices/notices.component';
 import { StudentRoutingModule } from './student-routing.module';
 import { AngularMaterialModule } from './angular-material.module';
+import { AnalysisComponent } from './analysis/analysis.component';
 
 
 
@@ -16,7 +17,8 @@ import { AngularMaterialModule } from './angular-material.module';
     ScheduleComponent,
     ExamComponent,
     AssignmentsComponent,
-    NoticesComponent
+    NoticesComponent,
+    AnalysisComponent
   ],
   imports: [
     CommonModule,

@@ -13,12 +13,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SchoolModule } from './School/school.module';
 import { TeacherModule } from './teacher/teacher.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SchoolModule,
     TeacherModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [SchoolService],
   bootstrap: [AppComponent]

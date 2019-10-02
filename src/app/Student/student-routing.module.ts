@@ -5,6 +5,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { ExamComponent } from './exam/exam.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { NoticesComponent } from './notices/notices.component';
+import {AnalysisComponent} from './analysis/analysis.component';
 
 const routes: Routes = [
   { path : '' , redirectTo: 'home', pathMatch: 'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path : 'Schedule' , component : ScheduleComponent},
     { path : 'Exams' , component : ExamComponent},
     { path : 'Assignments' , component : AssignmentsComponent},
-    { path : 'Notice' , component : NoticesComponent}
+    { path : 'Notice' , component : NoticesComponent},
+    { path : 'Analysis' , component : AnalysisComponent}
     ]
   }
 ];
